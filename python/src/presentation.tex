@@ -482,10 +482,10 @@ We will be exploring python with ipython, python3 and an editor if needed.\\
     # Dictionary is mutable
     
     # create a dictionary - keep amount
-    shopping = dict('spam':1, 'flour':1, 'eggs':1)
+    shopping = dict([('spam', 1), ('flour', 1), ('eggs', 1))
     
     # equivalent
-    shopping = {'spam', 'flour', 'spam', 'eggs'}
+    shopping = {'spam': 1, 'flour': 1, 'eggs': 1}
     
     num_items = len(shopping)  # get size of set
     print(shopping)            # print whole tuple
