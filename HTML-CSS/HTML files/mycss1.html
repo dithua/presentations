@@ -1,0 +1,61 @@
+
+<html>
+
+	<head>
+            <title>HTML - CSS </title>
+            <meta charset="UTF-8">
+		<style>
+			#ul1 {
+				width: 100px;
+				text-align: center;
+				list-style: none;
+			}
+			#ul1 li {
+				background-color: grey;
+				padding:5px;
+			}
+			 #ul1 li:hover > .subList{
+				display:block;
+			}
+			.subList{
+				display:none;
+				background-color: lightgrey;
+			}
+		</style>
+	</head>
+
+	<body>
+
+	
+		<!--
+		Για την πρωτη λιστα μας (ul1) επιλεγουμε να την καλουμε μεσω του id της, γιατι θεωρουμε οτι ειναι κατι μοναδικο μεσα στη σελιδα μας και δεν θα εχουμε παρομοια λιστα ξανα στη συνεχεια
+		Για την εσωτερικη λιστα (subList) επιλεγουμε να την καλουμε μεσω του class της, γιατι δεν προκειται για λιστα που θα χρησιμοποιηθει μονο 1 φορα, αλλα οπως βλεπουμε χρησιμοποιειται μια φορα για καθρ στοιχειο που εχουμε στην ul1!
+		
+		-->
+		<ul id="ul1">
+			<li>menu1
+				<ul class="subList">
+					<li><a href="http://www.google.com/">google</a></li>
+					<li><a href="http://www.yahoo.com/">yahoo</a></li>
+					<li><a href="http://www.w3schools.com/">w3school</a></li>
+				</ul>
+			</li>
+			<li>menu2
+				<ul class="subList">
+					<li>google</li>
+					<li>yahoo</li>
+					<li>w3school</li>
+				</ul>
+			</li>
+			<li>menu3
+				<ul class="subList">
+					<li>subMenu1</li>
+					<li>subMenu2</li>
+					<li>subMenu3</li>
+				</ul>
+			</li>
+		</ul>
+		
+	</body>
+	
+</html>
